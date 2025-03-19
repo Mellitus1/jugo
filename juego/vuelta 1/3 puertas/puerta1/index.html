@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.Edzq & Gtmfdq</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; 
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 0; 
+    }
+    .statue {
+      position: absolute;
+      top: 20%; 
+      width: 10%; 
+      height: auto; 
+      z-index: 1;
+      cursor: pointer;
+    }
+    .book {
+      position: absolute;
+      bottom: 20%; 
+      width: 15%; 
+      right: 50%;
+      height: auto; 
+      z-index: 1;
+      cursor: pointer; 
+    }
+  </style>
+</head>
+<body>
+  <img class="image" src="./sala.png" alt="Imagen ajustada">
+
+  <!-- Estatua en la parte superior -->
+    <img class="statue" src="./dios.png" alt="Estatua" onclick="alert('otra estatua... esta está lejos. no puedo ver bien qué es')">
+
+  <!-- Libro en la parte inferior -->
+  <a href="./libro/index.html">
+     <img class="book" src="./libro.png" alt="Libro">
+</body>
+</html>
