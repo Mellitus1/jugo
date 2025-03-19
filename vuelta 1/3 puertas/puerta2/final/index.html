@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edzq & Gtmfdq</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: black; /* Fondo negro */
+      position: relative; /* Necesario para posicionar elementos absolutos */
+    }
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ajusta la imagen para que no se corte */
+      z-index: 0; /* Imagen en el fondo */
+    }
+    .arrow {
+      position: absolute;
+      right: 45%;
+      bottom: 50%; /* Margen inferior */
+      width: 5%; /* Tamaño de las flechas */
+      height: 10%; /* Mantener proporciones */
+      z-index: 1; /* Asegura que las flechas estén delante de la imagen */
+    }
+    .extra-image1 {
+      position: absolute;
+      right: 54%;
+      bottom: 30%; /* Margen inferior */
+      width: 10%; /* Tamaño de las flechas */
+      height: 5%; /* Mantener proporciones */
+      z-index: 1; /* Asegura que las flechas estén delante de la imagen */
+    }
+    .extra-image2 {
+      position: absolute;
+      right: 35%;
+      bottom: 20%; /* Margen inferior */
+      width: 7%; /* Tamaño de las flechas */
+      height: 14%; /* Mantener proporciones */
+      z-index: 1; /* Asegura que las flechas estén delante de la imagen */
+    }
+  </style>
+</head>
+<body>
+  <img class="image" src="./fotos final/final.png" alt="Imagen ajustada">
+
+  <!-- Flecha izquierda -->
+  <a href="./salida/index.html">
+    <img class="arrow" src="../../../../fotos/flecha.png" alt="Flecha arriba">
+  </a>
+
+  <!-- Imágenes adicionales -->
+  <img class="extra-image1" src="./fotos final/cuchillo.png" alt="cuchillo" onclick="alert('DILE A JAVI QUE TIENES EL CUCHILLO DE SACRIFICIO')" />
+  <img class="extra-image2" src="./fotos final/trozo.png" alt="trozo" onclick="alert('TROZO DE ESPEJO CONSEGUIDO 2/3                                     DILE A JAVI')" />
+</body>
+</html>
